@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  font-family: Calibri, Helvetica, sans-serif;
+}
+.container {
+    padding: 150px;
+
+}
+
+
+ div {
+            padding: 10px 0;
+         }
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.deletebtn {
+  background-color: #FF0000;
+  color: white;
+  padding: 20px 40px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+.deletebtn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<form method="post">
+     {% csrf_token %}
+
+  <div class="container" align="center">
+  <center>  <h1 style="color:white;font-size:50px;"> Delete </h1> </center>
+  <hr>
+
+
+<h3 style="color:blue;">Are you sure delete?</h3>
+
+
+
+
+    <button type="submit" class="deletebtn">Confirm</button>
+
+
+  </div>
+
+</form>
+
+</body>
+
+</html>
+
+<!--    <form method="post">-->
+<!--    {% csrf_token %}-->
+<!--    <h3 style="color:red;">Are you sure delete?</h3>-->
+<!--        <button type="submit" style="center;">Confirm</button>-->
+
+<!--</form>-->
+
+
+{% endblock %}

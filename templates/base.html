@@ -1,0 +1,66 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Post</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'fr/layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+    <style>
+          .abcd{
+  height:100%;
+  background-position : center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+    </style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div  class="abcd" style="background-image:url({% static 'fr/images/demo/backgrounds/back.jpg' %});">
+
+
+<div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <!-- ################################################################################################ -->
+
+      <!-- ################################################################################################ -->
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+
+<li class="active"><a href="/">Home</a></li>
+            <li><a href="/"><i class="fas fa-home"></i></a></li>
+
+
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+</div>
+
+
+
+
+  <!-- ################################################################################################ -->
+  <div id="logo" >
+        <h1 style="text-align:center;font-size:80px;"><a style="color:#ADEFD1FF;" href="/">Indoor plant</a></h1>
+      </div>
+      <!-- ################################################################################################ -->
+
+
+{% block content %}
+{% endblock %}
+</body>
+</html>

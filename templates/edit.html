@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<html>
+<style>
+  container {
+    padding: 150px;
+    align:center;
+
+}
+
+
+</style>
+</html>
+<body>
+
+<div class="container" align="center">
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+<!--    <input type="submit">-->
+
+    <button type="submit" class="btn btn-success" style="background-color:green">DONE</button>
+
+</form>
+
+</div>
+
+</body>
+
+
+
+
+
+<!--<form method="post">-->
+<!--    {% csrf_token %}-->
+<!--    {{ form.as_p}}-->
+<!--    <input type="submit">-->
+<!--</form>-->
+
+
+{% endblock %}
